@@ -46,6 +46,12 @@
   color: #10375c;
 }
 
+.line-clamp {
+ display:webkit-box;
+ -webkit-line-clamp: 3;
+ -webkit-box-or-orient: vertical;
+ overflow: hidden; 
+}
 
 .App-link {
   color: #61dafb;
