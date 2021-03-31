@@ -3,8 +3,6 @@ import "./App.css";
 import { article1 } from "./data/article-1";
 import parse from "html-react-parser";
 
-
-
 export const News = () => {
 
 const articleContent = article1.body.map(({type,model}) => {
@@ -19,11 +17,9 @@ const articleContent = article1.body.map(({type,model}) => {
 
                 case "paragraph":
                 content =`<p>${model.text}</p>`
-                        
-                    
+                          
                 break;
 
-        
                 default:
                 break;
         }
@@ -31,7 +27,6 @@ const articleContent = article1.body.map(({type,model}) => {
     return content;
 
 }).join('')    
-
 
   return (
     <>
